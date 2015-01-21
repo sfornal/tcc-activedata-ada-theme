@@ -6,8 +6,15 @@ default:
 dev:
   description: 'Development Build - No minification, uglification, concatenation. Include CSS source maps.'
   tasks:
-    - 'concurrent:devFirst'
-    - 'concurrent:devSecond'
+    - clean
+    - 'jshint:default'
+    - 'sass:dev'
+    - 'copy:css'
+    - 'copy:config'
+    - 'copy:xslt'
+    - 'copy:def'
+    - 'copy:js'
+    - 'autoprefixer:dev'
     - img
     - 'version::patch'
     - compress
@@ -15,13 +22,22 @@ dev:
 img:
   description: 'Image minification tasks'
   tasks:
-    - 'concurrent:imgFirst'
+    - 'copy:images'
+    - imagemin
 
 prod:
   description: 'Build a publication-ready calendar theme. Files will be output to dist/ folder, and zipped for deployment to Active Data.'
   tasks:
-    - 'concurrent:prodFirst'
-    - 'concurrent:prodSecond'
+    - clean
+    - 'jshint:default'
+    - 'sass:prod'
+    - 'copy:css'
+    - 'copy:config'
+    - 'copy:xslt'
+    - 'copy:def'
+    - uglify
+    - 'autoprefixer:prod'
     - img
+    - cssmin
     - 'version::minor'
     - compress

@@ -16,7 +16,7 @@ module.exports = {
         {
             expand: true,
             cwd: 'src/images',
-            src: ['*.jpg,jpeg,gif,png,svg,svgz'],
+            src: ['*.{jpg,jpeg,gif,png,svg,svgz}'],
             dest: 'dist/raw/images'
         },
         {

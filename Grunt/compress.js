@@ -6,7 +6,7 @@ module.exports = {
     options: {
         mode: 'zip',
         pretty: true,
-        output: 'dist/<%= package.name %>-v<%= package.version %>.zip'
+        archive: 'dist/<%= package.name %>-v<%= package.version %>.zip'
     },
 
     default: {
