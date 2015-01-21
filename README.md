@@ -18,3 +18,5 @@ Clone this project, then change to the project directory. Install the dev depend
 `npm install`
 
 After making changes to the project, type `grunt` on the command line to generate a theme package ZIP in the `dist/` folder that can be uploaded to ActiveData and activated as the custom layout.
+
+Alternately, type `grunt dev` to generate the theme ZIP without any minification/concatenation of source files. This will also create a source map for the CSS file, for debugging on the web inspector.
