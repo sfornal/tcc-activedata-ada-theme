@@ -1,5 +1,0 @@
-# Keep this (currently) empty folder in the repo
-# This is the root folder for content images
-# All subsite images live in a folder off the root images folder, named based on the
-# desired URL slug for the subsite.
-# These are images specific to the subsite, and may be uploaded by content editors

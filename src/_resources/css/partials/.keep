@@ -1,4 +1,0 @@
-# Keep this (currently) empty folder in the repo
-# /_resources/css/partials is where the SCSS source files for the individual
-# components of the main stylesheet live. Partials do not get compiled into
-# corresponding CSS files
