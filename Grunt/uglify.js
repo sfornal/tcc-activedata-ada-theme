@@ -20,9 +20,9 @@ module.exports = {
     default: {
         files: [{
             expand: true,
-            cwd: 'src/',
-            src: ['**/*.js', '!**/*.min.js', '!_resources/vendor/**'],
-            dest: 'dist/'
+            cwd: 'src/js',
+            src: ['*.js', '!*.min.js'],
+            dest: 'dist/raw/js'
         }]
     }
 };

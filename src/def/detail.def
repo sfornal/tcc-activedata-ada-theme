@@ -1,0 +1,29 @@
+﻿<!-- The layout tag is the upper most container tag, similar to the HTML body tag. This tag is required in all definition files and does not have any configuration options. -->
+<adx-layout>
+  <!-- The adx-config tag is required to be the first tag within the adx-layout tag. This tag identifies the type of defintion file, (list vs. details for example) as well as the layout version number.-->
+  <adx-config type="detail" version="1.0"/>
+	<adx-head>
+    <!-- Required place holder added -->
+    <adx-placeholder/>
+	</adx-head>
+	<adx-body>
+		<!-- Styling and container div's added-->
+    <div id="masthead" class="theme-header">
+			<div class="wrap">
+				<h1>Technical Services</h1>
+				<div class="wrap frame separator">
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class="wrap frame content">
+				<div class="theme-events">
+          <!-- adx-rending added to detirme the source, transform, and type for this definition file.-->
+          <adx-rendering id="detailRendering" transform="detail.xslt" type="detail"/>
+          <!-- Required place holder added -->
+          <adx-placeholder />
+				</div>
+			</div>
+		<div>
+	</adx-body>
+</adx-layout>

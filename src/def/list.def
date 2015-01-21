@@ -1,0 +1,39 @@
+﻿<!-- The layout tag is the upper most container tag, similar to the HTML body tag. This tag is required in all definition files and does not have any configuration options. -->
+<adx-layout>
+  <!-- The adx-config tag is required to be the first tag within the adx-layout tag. This tag identifies the type of defintion file, (list vs. details for example) as well as the layout version number.-->
+  <adx-config type="list" version="1.0" />
+    <adx-head>
+      <!--Provide Links to any list specific style sheets.-->
+		<link rel="stylesheet" href="css/search.css"/>
+      <!-- Required place holder added -->  
+      <adx-placeholder />
+    </adx-head>
+    <adx-body>
+      <!-- Styling Div's and Content containers added-->
+		<div id="masthead" class="theme-header">
+			<div class="wrap">
+				<h1>Technical Services</h1>
+				<div class="wrap frame separator"></div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class="wrap frame content">
+				<div class="theme-events">
+          <!-- View Navigation-->
+          <a href="/docs?view=list">
+            <i class="fa fa-list fa-2x"></i>
+          </a>
+          <a href="/docs?view=vividgrid">
+            <i class="fa fa-camera fa-2x"></i>
+          </a>
+          <!-- If the search control is to be displayed for pages using the list.def file it is added here.-->
+          <adx-search id="search" />
+          <!-- adx-rending added to detirme the source, transform, and type for this definition file.-->
+          <adx-rendering id="rendering" source="ListFull" transform="list.xslt" type="List" />
+          <!-- Required place holder added -->
+          <adx-placeholder />
+				</div>
+			</div>
+		</div>
+    </adx-body>
+</adx-layout>

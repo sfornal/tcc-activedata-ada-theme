@@ -1,5 +1,6 @@
-//Written by Stephen Fornal on 2015/01/14
-//Autopreficer adds vendor prefixes, using data from caniuse.com
+//Written by Stephen Fornal on 2015/01/21
+
+//Autoprefixer adds vendor prefixes, using data from caniuse.com
 //It is used in the build process to add prefixes, as well as copying the
 //css to the dist folder
 'use strict';
@@ -7,7 +8,7 @@
 module.exports = {
 
     options: {
-        browsers: ['last 4 versions', 'ie 8', 'ie 9']
+        browsers: ['> 2%', 'last 2 versions', 'ie 8', 'ie 9']
     },
 
     dev: {
@@ -17,9 +18,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'src/',
+            cwd: 'tmp/',
             src: '**/*.css',
-            dest: 'dist/'
+            dest: 'dist/raw/css'
         }]
     },
     prod: {
@@ -31,9 +32,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'src/',
+            cwd: 'tmp/',
             src: '**/*.css',
-            dest: 'dist/'
+            dest: 'dist/raw/css'
         }]
     }
 };

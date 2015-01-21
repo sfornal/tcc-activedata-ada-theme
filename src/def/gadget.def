@@ -1,0 +1,11 @@
+﻿<adx-layout>
+    <adx-config type="gadget" version="1.0" />
+    <adx-head>
+        <adx-placeholder />
+    </adx-head>
+    <adx-body>
+		<div style="background-color: #FFF; padding: 20px;">
+	        <adx-placeholder />
+		</div>
+    </adx-body>
+</adx-layout>

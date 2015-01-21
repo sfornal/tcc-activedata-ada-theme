@@ -1,0 +1,121 @@
+*{margin: 0; padding: 0; font-weight: normal;}
+*, *:before, *:after {box-sizing: border-box;}
+h1, h2, h3, h4, h5, h6{margin: 0 0 10px;}
+p{margin: 0 0 15px;}
+a{text-decoration: none;}
+h1{font-size:250%;}
+h2{font-size:200%;}
+h3{font-size:120%;}
+h4{font-size:110%;}
+.one-fourth{width: 25%;}
+.three-fourth{width: 75%;}
+.full{width: 100%}
+.row:before, .row:after {content: " "; display: table;}
+.row:after {clear: both;}
+.col{display: block; float: left; position: relative;}
+
+.wrap, .wrap-content{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.frame {
+	padding: 0 25px;
+	background-color: #FFFFFF;
+    clear: both;
+    overflow:hidden;
+}
+
+.content {
+	min-height: 600px;
+    margin-bottom: 50px;
+}
+
+.more{
+	border-radius: 2px;
+	display: inline-block;
+}
+.more a{
+	display: block;
+	padding: 5px 10px 5px 10px;
+}
+#main-nav-container{
+	overflow: hidden;
+	text-transform: uppercase;
+}
+#main-nav{
+	clear: both;
+}
+#main-nav nav ul{
+	list-style: none;
+}
+#main-nav>a, #main-nav nav, #main-nav nav ul li{
+	display: block;
+	float: left;
+	text-align: center;
+}
+#main-nav>a, #main-nav nav a{
+	display: block;
+	letter-spacing: .08em;
+	padding: 15px 10px;
+}
+#mobile-toggle{
+	cursor: pointer;
+	display: none;
+}
+#mobile-toggle:after{
+	content: "\f0c9";
+	display: block;
+	float: right;
+	font-family: FontAwesome;
+	font-size: 40px;
+	height: 40px;
+	width: 40px;
+}
+#mobile-toggle.expanded:after{
+	content: "\f00d";
+}
+#masthead h1{
+	margin: 0;
+	padding: 50px 0 0;
+	text-transform: uppercase;
+}
+#masthead .separator{
+	height: 40px;
+}
+#main-content .event{
+	padding: 20px 15px 30px;
+}
+#main-content .event:after{
+	border-bottom: 1px solid #ccc;
+	content: "";
+	display: block;
+	padding: 20px 0 0;
+}
+#main-content .event-image img{
+	width: 100%;
+}
+@media only screen and (min-width: 480px){
+	#main-nav{
+		display: block!important;
+	}
+}
+@media only screen and (max-width: 479px){
+	.col{float: none; width: 100%;}
+	
+	#main-nav{
+		display: none;
+		padding: 0;
+	}
+	#main-nav>a, #main-nav nav, #main-nav nav ul li{
+		float: none;
+	}
+	#mobile-toggle{
+		display: block;
+	}
+	#masthead h1{
+		text-align: center;
+	}
+}
+#gadget {
+	display:none;
+}

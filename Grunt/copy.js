@@ -3,67 +3,65 @@
 
 //Copy contents from one place to another
 module.exports = {
-    //Copy everything not covered by a different build process:
-    // - HTML
-    // - Includes
-    // - Fonts
-    // - Vendor Libraries
-    html: {
+
+    //copy config.xml to root of theme
+    config: {
         files: [
-            { //HTML
+            {
                 expand: true,
-                cwd: 'src/',
-                src: ['**/*.{html,htm,shtml,shtm,asp,aspx,php}'],
-                dest: 'dist/'
+                cwd: 'src/config',
+                src: ['*.xml'],
+                dest: 'dist/raw'
             }]
     },
-    ssi: {
+
+    //copy xslt files to root of theme
+    xslt: {
         files: [{
-            //Server Side Includes
             expand: true,
-            cwd: 'src/',
-            src: ['**/*.{inc,ssi}'],
-            dest: 'dist/'
-        }]
-    },
-    fonts: {
-        files: [{
-            //Fonts
-            expand: true,
-            cwd: 'src/',
-            src: ['**/*.{woff,otf,eot,ttf,svg,svgz}'],
-            dest: 'dist/'
-        }]
-    },
-    vendor: {
-        files: [{
-            //Vendor Libraries
-            expand: true,
-            cwd: 'src/_resources/vendor',
-            src: ['**/*'],
-            dest: 'dist/_resources/vendor'
+            cwd: 'src/xslt',
+            src: ['*.xslt'],
+            dest: 'dist/raw'
         }]
     },
 
-    //Copy images not copied by imagemin
+    //copy def files to root of theme
+    def: {
+        files: [{
+            expand: true,
+            cwd: 'src/def',
+            src: ['*.def'],
+            dest: 'dist/raw'
+        }]
+    },
+
+    //Copy raw CSS files to tmp for autoprefixer to find
+    css: {
+        files: [{
+            expand: true,
+            cwd: 'src/css',
+            src: ['*.css'],
+            dest: 'tmp/'
+        }]
+    },
+
+    //Copy image types not processed by imagemin to corresponding place in theme
     images: {
         files: [{
             expand: true,
             cwd: 'src/',
             src: ['**/*.{ico,bmp,tif,webp}'],
-            dest: 'dist/'
+            dest: 'dist/raw'
         }]
     },
 
-    //Copy everything in dist to the designated publish path.
-    //I use this to copy to the network share that is mapped to my dev
-    //server root
-    publish: {
+    //Copy JS files for dev build (no concatenate or minify) to js folder in theme
+    js: {
         files: [{
             expand: true,
-            cwd: 'dist/',
-            src: ['**/*'],
-            dest: '<%= publishPath =>'
+            cwd: 'src/js',
+            src: ['*.js'],
+            dest: 'dist/raw/js'
         }]
     }
 };

@@ -2,20 +2,28 @@
 'use strict';
 
 //Copy images to dist folder, and additionally apply optimizations
-//to jpeg, png, and svg files
+//to jpeg, png, gif, and svg files
 
 module.exports = {
     options: {
         optimizationLevel: 7,
         progressive: true,
-        interlaced: true
+        interlaced: true,
+        use: [(require('imagemin-mozjpeg'))()]
     },
     default: {
-        files:[{
+        files:[
+        {
             expand: true,
-            cwd: 'src/',
-            src: ['**/*.jpg,jpeg,gif,png,svg,svgz', '!_resources/fonts/**.{svg,svgz}'],
-            dest: 'dist/'
+            cwd: 'src/images',
+            src: ['*.jpg,jpeg,gif,png,svg,svgz'],
+            dest: 'dist/raw/images'
+        },
+        {
+            expand: true,
+            cwd: 'src/thumbnail',
+            src: ['thumbnail.{jpg,jpeg,gif,png}'],
+            dest: 'dist/raw/'
         }]
     }
 };

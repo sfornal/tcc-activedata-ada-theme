@@ -1,0 +1,158 @@
+#core_signin {
+	margin-top: 50px;
+	width: 500px;
+	float: left;
+	margin-left: 20px;
+}
+
+#core_signup {
+	margin: 50px 20px 100px 0; /* top right bottom left */
+	width: 500px;
+	float: right;
+}
+
+.core-title {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.core-subtitle {
+	font-size: 24px;
+	margin-top: 40px;
+}
+
+.core-primary-container {
+	margin-left: 30px;
+}
+
+.core-message {
+	margin: 10px 0 10px 0;
+}
+
+.core-label {
+	display: block;
+	margin-bottom: 0px;
+}
+
+.core-text {
+	width: 500px;
+	margin-bottom: 10px;
+	height: 25px;
+}
+
+.core-message > a, .core-message > a:hover, #core_button_forgotpassword, #hlnkSignIn {
+	text-decoration: underline;
+	color: #555;
+}
+
+.core-button-container {
+	margin-top: 10px;
+}
+
+.core-button-submit, .core-button-submit:hover {
+	font-size: 16px;
+	padding: 10px;
+	background-color: #111166;
+	color: white;
+}
+
+.core-dedicated-products-name {
+	width: 400px;
+}
+.core-dedicated-products-cost {
+	width: 50px;
+	text-align: right;
+	padding-right: 20px;
+}
+.core-dedicated-products-quantitydonation {
+	width: 50px;
+	text-align: center;
+}
+.core-product-quantity {
+	width: 50px;
+	text-align: right;
+}
+.core-dedicated-products-action {
+	width: 60px;
+	text-align:right;
+}
+
+.core-dedicated-product-info {
+	border-top: 1px #CCC solid;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.core-dedicated-product-info-remove {
+	float: right;
+}
+
+a.core-dedicated-product-info-remove:link, a.core-dedicated-product-info-remove:hover {
+	text-decoration: underline;
+	color: #555;
+}
+
+a.core-registration-dedicated-update:link, a.core-registration-dedicated-update:hover {
+	text-decoration: underline;
+	color: #555;
+}
+
+.core-input-container {
+}
+
+.custom_checkbox_list > ul  {
+	list-style: none;
+	padding-left: 15px;
+}
+
+.custom_checkbox_list > ul > li > label {
+	margin-left: 5px;
+	font-weight: normal;
+}
+
+.core-input-container > select {
+	margin: 5px 0 15px 15px;
+}
+.core-checkbox > label {
+	margin-left: 5px;
+}
+#core_registration {
+	margin-bottom: 100px;
+}
+div.core-primary-container > div.core-subtitle {
+	margin-left: 100px;
+	margin-bottom: 20px;
+}
+div.core-dedicated-product-info > div > div.core-input-container > input.core-text {
+	width: 80%;
+}
+table.core-dedicated-products > thead > tr > th {
+	font-size: 16px;
+	color: #999;
+}
+.core-dedicated-products-name > label {
+	color: #111166;
+}
+
+.core-dedicated-products-name > div {
+	margin-left: 20px;
+}
+
+table.core-dedicated-products {
+	width: 600px;
+	margin-left: 150px;
+}
+#core_registration > div.core-button-container {
+	margin-top: 30px;
+	text-align: right;
+	width: 620px;
+	margin-left: 150px;
+
+}
+.core-button-container > span {
+	float: left;
+	margin-left: 30px;
+}
+#core_registration > div.core-button-container > .core-button-submit {
+	margin-left: 30px;
+}

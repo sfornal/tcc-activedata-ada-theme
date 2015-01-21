@@ -1,0 +1,52 @@
+﻿<!-- The layout tag is the upper most container tag, similar to the HTML body tag. This tag is required in all definition files and does not have any configuration options. -->
+<adx-layout>
+  <!-- The adx-config tag is required to be the first tag within the adx-layout tag. This tag identifies the type of defintion file, (list vs. details for example) as well as the layout version number.-->  
+  <adx-config type="site" version="1.0" />
+    <adx-head>
+      <!-- Definitions are then made for viewports and character sets.-->
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<title>Basic List Example Template V2</title>
+      <!-- Style Sheets are then referenced to the files that have been installed in the layout package.-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext" rel="stylesheet" />
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="css/styles.css" rel="stylesheet" />
+		<link href="css/theme.css" rel="stylesheet" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<adx-placeholder />
+		<style>
+			.theme-nav a:hover { background-color: <adx-value key="layout.primary_theme_color"/>; } 
+			.theme-header { background-color: <adx-value key="layout.primary_theme_color"/>; }
+			.theme-nav { background-color: <adx-value key="layout.secondary_theme_color"/>; }
+			
+			body { background-color: <adx-value key="layout.body_background_color"/>; }
+			.frame { background-color: <adx-value key="layout.content_background_color"/>; }
+
+			body, a:link, a:hover { color: <adx-value key="layout.event_text_color"/>; }			
+			
+			.theme-nav { color: <adx-value key="layout.heading_text_color"/>; }
+			.theme-nav a { color: <adx-value key="layout.heading_text_color"/>; }
+			.theme-nav a:hover { color: <adx-value key="layout.heading_text_color"/>; }
+			.theme-header h1 { color: <adx-value key="layout.heading_text_color"/>; }
+			
+		</style>
+    </adx-head>
+    <adx-body>
+    <!-- The body content for all pages is defined, this includes core application navigation and header files.-->
+		<div id="main-nav-container" class="theme-nav">
+			<div id="mobile-toggle"></div>
+			<div id="main-nav" class="wrap">
+       	<a href="/docs">Home</a>
+				<nav>
+					<adx-navigation id="mainnav" links="manage,create,signin,edit" />
+				</nav>
+			</div>
+		</div>
+      <!--Adx-placeholder is then added to determine where the nested definition files (list,grid,summary,details)
+      are included on the page when loaded. If the end user selected to view the event list, the list.def would be referenced here by the appliaction.  -->  
+		<adx-placeholder />
+      <!--If your layout supports user configured Javascript via the layout settings configuraiton page, add a scrip-->
+		<script src="js/scripts.js"></script>
+	</adx-body>
+</adx-html>

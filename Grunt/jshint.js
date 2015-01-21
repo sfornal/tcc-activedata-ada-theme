@@ -10,7 +10,6 @@ module.exports = {
     default: [
         'src/**/*.js',
         '!src/**/*.min.js',
-        '!src/_resources/vendor/**'
     ],
     grunt: [
         'Gruntfile.js',

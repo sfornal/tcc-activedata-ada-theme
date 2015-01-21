@@ -8,24 +8,18 @@ module.exports = {
         logConcurrentOutput: false
     },
     devFirst: {
-        tasks: ['clean', 'jshint:default', 'sass:dev']
+        tasks: ['clean', 'jshint:default', 'sass:dev', 'copy:css']
     },
     devSecond: {
-        tasks: ['copy:html', 'copy:ssi', 'copy:fonts', 'copy:vendor', 'uglify', 'autoprefixer:dev']
+        tasks: ['copy:config', 'copy:xslt', 'copy:def', 'copy:js', 'autoprefixer:dev']
     },
     imgFirst: {
         tasks: ['imagemin', 'copy:images']
     },
     prodFirst: {
-        tasks: ['clean', 'jshint:default', 'sass:prod']
+        tasks: ['clean', 'jshint:default', 'sass:prod', 'copy:css']
     },
     prodSecond: {
-        tasks: ['copy:html', 'copy:ssi', 'copy:fonts', 'copy:vendor', 'uglify', 'autoprefixer:prod']
+        tasks: ['copy:config', 'copy:xslt', 'copy:def', 'uglify', 'autoprefixer:prod']
     },
-    devwatch: {
-        options: {
-            logConcurrentOutput: true
-        },
-        tasks: ['connect:devwatch', 'watch']
-    }
 };

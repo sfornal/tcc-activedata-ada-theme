@@ -1,0 +1,73 @@
+#core_search
+{
+	width: 100%;
+	max-width: 1100px;
+}
+
+#core_search > div 
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.core-input-container {
+	margin-right: 15px;
+}
+
+.core-button-container
+{
+}
+
+.core-label {
+	padding-right: 10px;
+	display: block;
+}
+
+.core-input-container > a, .core-button-container > a {
+	font-size: 12px;
+	text-decoration: underline;
+	color: #555;
+}
+
+.core-search-start-date, .core-search-end-date {
+	width: 100%;
+	text-align: center;
+	height: 25px;
+}
+
+.core-search-keywords {
+	width: 100%;
+	height: 25px;
+}
+
+.search-category {
+	width: 100%;
+	display: block;
+	height: 25px;
+}
+
+.search-location {
+	width: 100%;
+	display: block;
+	height: 25px;
+}
+
+.core-button-clear {
+}
+
+#core_search_start_date, #core_search_end_date {
+	width: 100px;
+}
+#core_search_keywords {
+	width: 250px;
+}
+#core_search_category {
+	width: 200px;
+}
+#core_search_location {
+	width: 200px;
+}
+#core_search_submit {
+	padding-top: 23px;
+	width: 150px;
+}

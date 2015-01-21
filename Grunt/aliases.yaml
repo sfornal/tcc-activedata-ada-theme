@@ -4,38 +4,24 @@ default:
     - prod
 
 dev:
-  description: 'Default development build (CSS and JS)'
+  description: 'Development Build - No minification, uglification, concatenation. Include CSS source maps.'
   tasks:
     - 'concurrent:devFirst'
     - 'concurrent:devSecond'
+    - img
+    - 'version::patch'
+    - compress
 
 img:
   description: 'Image minification tasks'
   tasks:
     - 'concurrent:imgFirst'
 
-devimg:
-  description: 'Development tasks and image tasks (time intensive)'
-  tasks:
-    - dev
-    - img
-
 prod:
-  description: 'Build a publication-ready site'
+  description: 'Build a publication-ready calendar theme. Files will be output to dist/ folder, and zipped for deployment to Active Data.'
   tasks:
     - 'concurrent:prodFirst'
     - 'concurrent:prodSecond'
     - img
-
-publish:
-  description: 'Copies current contents of dist to destination defined in "publish" option variable'
-  tasks:
-    - 'copy:publish'
-
-devwatch:
-  description: 'Live development mode with a livereload host on the local machine'
-  tasks:
-    - 'concurrent:devFirst'
-    - 'concurrent:devSecond'
-    - img
-    - 'concurrent:devwatch'
+    - 'version::minor'
+    - compress

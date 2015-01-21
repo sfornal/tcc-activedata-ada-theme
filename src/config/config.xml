@@ -1,0 +1,10 @@
+<config>
+ 	<item key="primary_theme_color" label="Primary Theme Color" type="text" description="Enter a hex value (#000044) for the primary theme color.">#000044</item>
+ 	<item key="secondary_theme_color" label="Secondary Theme Color" type="text" description="Enter a hex value (#111166) for the secondary theme color.">#111166</item>
+
+	<item key="body_background_color" label="Body Background Color" type="text" description="Enter a hex value (#EFEFEF) for the body background color.">#EFEFEF</item>
+ 	<item key="content_background_color" label="Content Background Color" type="text" description="Enter a hex value (#FFFFFF) for the content background color.">#FFFFFF</item>
+
+ 	<item key="event_text_color" label="Event Text Color" type="text" description="Enter a hex value (#444444) for the event text color.">#444444</item>
+ 	<item key="heading_text_color" label="Heading Text Color" type="text" description="Enter a hex value (#FFFFFF) for the title and navigation text color.">#FFFFFF</item>
+</config>

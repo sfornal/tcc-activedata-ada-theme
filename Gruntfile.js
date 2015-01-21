@@ -1,5 +1,5 @@
-//Written by [name] on [date]
-//For the [Project] Project
+//Written by Stephen Fornal on 2015-01-21
+//For the Active Data ADA Layout Project
 'use strict';
 
 module.exports = function(grunt) {
@@ -15,10 +15,6 @@ module.exports = function(grunt) {
         //Path to find task configurations
         configPath: path.join(process.cwd(), 'grunt'),
 
-        init: true,
-
-        data: {
-            publishPath: 'path/to/publish/using/copy'
-        }
+        init: true
     });
 };

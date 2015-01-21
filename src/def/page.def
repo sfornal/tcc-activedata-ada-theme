@@ -1,0 +1,20 @@
+﻿<adx-layout>
+    <adx-config type="page" version="1.0" />
+    <adx-head>
+		<link rel="stylesheet" href="css/page.css" />
+        <adx-placeholder />
+    </adx-head>
+    <adx-body>
+		<div id="masthead" class="theme-header">
+			<div class="wrap">
+				<h1>Technical Services</h1>
+				<div class="wrap frame separator"></div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class="wrap frame content">
+				<adx-placeholder />
+			</div>
+		<div>
+    </adx-body>
+</adx-layout>

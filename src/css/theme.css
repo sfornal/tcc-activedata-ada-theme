@@ -1,0 +1,57 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', Arial Narrow, Sans-Serif;
+}
+body {
+	background-color: #EFEFEF;
+	color: #444444;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 14px;
+}
+a:link, a:hover {
+	color: #444444;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 14px;
+	text-decoration: underline;
+}
+.theme-nav {
+	color: #FFFFFF;
+	background-color: #111166;
+}
+.theme-nav a:link, .theme-nav a:hover {
+	color: #FFFFFF;
+	font-family: 'Oswald', Arial Narrow, Sans-Serif;
+	text-decoration: none;
+}
+.theme-header, .theme-nav a:hover {
+	background-color: #000044;
+}
+.theme-header h1 {
+	color: #FFFFFF;
+	font-size: 80px;
+}
+.theme-events {}
+h2.details {
+	padding: 0;
+	font-size: 32px;
+	line-height: 40px;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+}
+h3.details {
+	text-transform: uppercase;
+	border-bottom: 1px #DDDDDD solid;
+	margin: 0 0 5px 0;
+	font-size: 14px;
+}
+p.details, p.details a:link, p.details a:hover {
+	font-size: 20px;
+}
+p.details a:link, p.details a:hover {
+	text-decoration: underline;
+}
+.Event_title a:link, .Event_title a:hover {
+    text-decoration:none;
+    font-family: 'Oswald', Arial Narrow, Sans-Serif;
+    font-size: 100%
+        
+}
