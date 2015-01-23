@@ -22,7 +22,7 @@ module.exports = {
         {
             expand: true,
             cwd: 'src/thumbnail',
-            src: ['thumbnail.{jpg,jpeg,gif,png}'],
+            src: ['thumbnail.png'],
             dest: 'dist/raw/'
         }]
     }
